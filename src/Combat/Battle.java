@@ -3,12 +3,23 @@ package Combat;
 import Units.Player;
 import Units.tempEnemy;
 
+import java.util.Scanner;
+
 public class Battle {
+        public static Scanner scanner  = new Scanner(System.in);
 
+        public static void choice(Player player, tempEnemy enemy){
+                System.out.println("Choose your action");
 
+                String choice = scanner.nextLine();
 
-public static void fight(Player player, tempEnemy enemy){
-
-
+                switch(choice){
+                        case "Attack":
+                                Attacks.basicAttack(player, enemy);
+                                break;
+                        case "Defend":
+                                Attacks.defend(player, enemy);
+                }
         }
+
 }
