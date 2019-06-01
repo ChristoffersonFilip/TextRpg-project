@@ -13,12 +13,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
+
         Player player = new Player(1, 15, 15, 1, 1, 1, "Player", true);
         VariousEnemies.addEnemies();
-        tempEnemy enemy = new tempEnemy(1,1,1,1,1,1,"Hello", true);
+
+        System.out.println(tempEnemy.getEnemyList());
+        //TODO Fix the in parameter and get the enemy to be correct
+        tempEnemy enemy = tempEnemy.getEnemyList(VariousEnemies.chooseEnemy());
 
 
-        Battle.choice(player, enemy );
+       // Battle.choice(player, enemy);
 
         /*
         tempEnemy testEnemy = new tempEnemy(1, 15, 10, 1, 1, 1, "enemy", true);

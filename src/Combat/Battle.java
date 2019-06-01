@@ -40,7 +40,7 @@ public class Battle {
                         }
                 }
         }
-
+        //TODO Fix the in parameters to work with Main.java
         public static void choice(Player player, tempEnemy enemy){
                 System.out.println("Choose your action");
                 System.out.println("Attack or Defend");
