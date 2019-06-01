@@ -5,13 +5,14 @@ import Units.tempEnemy;
 
 public class Attacks {
 
+    //TODO add more Attacks and idea
      static void basicAttack(Player player, tempEnemy enemy){
 
         System.out.println("Player deals "+player.getDamage()+ " damage");
         System.out.println(enemy.getHealth());
         enemy.setHealth(enemy.getHealth() - player.getDamage());
         System.out.println(enemy.getHealth());
-        if(enemy.getHealth() >= 0) {
+        if(enemy.getHealth() > 0) {
             EnemyTurn.enemyChoice(enemy, player);
         }
     }
@@ -22,7 +23,7 @@ public class Attacks {
         System.out.println("Enemy deals "+enemy.getDamage() / 2);
         player.setHealth(player.getHealth() - enemy.getDamage() / 2);
         System.out.println(player.getHealth());
-        if(enemy.getHealth() >= 0) {
+        if(enemy.getHealth() > 0) {
             EnemyTurn.enemyChoice(enemy, player);
         }
     }

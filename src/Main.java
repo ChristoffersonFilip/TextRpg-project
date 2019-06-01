@@ -1,6 +1,7 @@
 import Combat.Attacks;
 import Combat.Battle;
 import Units.Player;
+import Units.VariousEnemies;
 import Units.tempEnemy;
 
 import java.util.Random;
@@ -12,7 +13,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        Player player = new Player(1, 15, 10, 1, 1, 1, "Player", true);
+        Player player = new Player(1, 15, 15, 1, 1, 1, "Player", true);
+        VariousEnemies.addEnemies();
+        tempEnemy enemy = new tempEnemy(1,1,1,1,1,1,"Hello", true);
+
+
+        Battle.choice(player, enemy );
+
+        /*
         tempEnemy testEnemy = new tempEnemy(1, 15, 10, 1, 1, 1, "enemy", true);
         tempEnemy enemy1 = new tempEnemy(1, 15, 10, 1, 1, 1, "titut", true);
         tempEnemy enemy2 = new tempEnemy(1, 15, 10, 1, 1, 1, "HejHej", true);
@@ -28,13 +36,15 @@ public class Main {
         tempEnemy.getEnemyList().add(testEnemy);
 
 
-        int encounter = random.nextInt(5);
+        int encounter = random.nextInt(4);
 
 
         tempEnemy currentEnemy = tempEnemy.getEnemyList().get(encounter);
 
+        Battle.combatMenu(player, currentEnemy, encounter);
 
 
+/*
         while(player.isAlive() || currentEnemy.isAlive()) {
             System.out.println(currentEnemy.getName());
             if (player.getHealth() <= 0 ){
@@ -43,14 +53,15 @@ public class Main {
                 System.exit(1);
             }else if (currentEnemy.getHealth() <= 0){
                 System.out.println("You won the battle");
-                currentEnemy.setAlive(false);
-                tempEnemy.getEnemyList().remove(0);
                 currentEnemy = tempEnemy.getEnemyList().get(encounter);
             }
+
             else {
                 System.out.println("Choose your Action");
                 System.out.println("Combat or Escape");
+
                 String choice = scanner.nextLine();
+
                 switch (choice) {
                     case "Combat":
                         Battle.choice(player, currentEnemy);
@@ -62,5 +73,7 @@ public class Main {
                 }
             }
         }
+
+ */
     }
 }
