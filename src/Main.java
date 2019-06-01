@@ -9,19 +9,26 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         Player player = new Player(1, 15, 10, 1, 1, 1, "Player", true);
-        tempEnemy enemy = new tempEnemy(1, 15, 10, 1, 1, 1, "enemy", true);
 
 
 
-        while(player.isAlive() || enemy.isAlive()) {
+
+
+
+        tempEnemy currentEnemy = tempEnemy.getEnemyList().get[0];
+
+
+
+        while(player.isAlive() || currentEnemy.isAlive()) {
             if (player.getHealth() <= 0 ){
                 System.out.println("You died");
                 player.setAlive(false);
                 System.exit(1);
-            }else if (enemy.getHealth() <= 0){
+            }else if (currentEnemy.getHealth() <= 0){
                 System.out.println("You won the battle");
-                enemy.setAlive(false);
+                currentEnemy.setAlive(false);
                 System.exit(1);
             }
             else {
@@ -30,7 +37,7 @@ public class Main {
                 String choice = scanner.nextLine();
                 switch (choice) {
                     case "Combat":
-                        Battle.choice(player, enemy);
+                        Battle.choice(player, currentEnemy);
                         break;
                     case "Escape":
 
