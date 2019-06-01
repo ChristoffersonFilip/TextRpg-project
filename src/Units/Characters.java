@@ -8,8 +8,9 @@ public class Characters {
     private int mana;
     private int experience;
     private String name;
+    private boolean alive = true;
 
-    public Characters(int maxHealth, int health, int damage, int maxMana, int mana, int experience, String name) {
+    public Characters(int maxHealth, int health, int damage, int maxMana, int mana, int experience, String name, boolean alive) {
         this.maxHealth = maxHealth;
         this.health = health;
         this.damage = damage;
@@ -17,10 +18,19 @@ public class Characters {
         this.mana = mana;
         this.experience = experience;
         this.name = name;
+        this.alive = alive;
     }
 
     public int getDamage() {
         return damage;
+    }
+
+    public boolean isAlive() {
+        return alive;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
     }
 
     public void setDamage(int damage) {
