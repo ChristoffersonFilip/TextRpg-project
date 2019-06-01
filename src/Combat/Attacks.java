@@ -11,7 +11,9 @@ public class Attacks {
         System.out.println(enemy.getHealth());
         enemy.setHealth(enemy.getHealth() - player.getDamage());
         System.out.println(enemy.getHealth());
-        EnemyTurn.enemyChoice(enemy, player);
+        if(enemy.getHealth() >= 0) {
+            EnemyTurn.enemyChoice(enemy, player);
+        }
     }
 
     static void defend(Player player, tempEnemy enemy){
@@ -20,7 +22,9 @@ public class Attacks {
         System.out.println("Enemy deals "+enemy.getDamage() / 2);
         player.setHealth(player.getHealth() - enemy.getDamage() / 2);
         System.out.println(player.getHealth());
-        EnemyTurn.enemyChoice(enemy, player);
+        if(enemy.getHealth() >= 0) {
+            EnemyTurn.enemyChoice(enemy, player);
+        }
     }
 
     static void enemyAttack(tempEnemy enemy, Player player){

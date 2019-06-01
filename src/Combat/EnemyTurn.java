@@ -10,13 +10,13 @@ public class EnemyTurn {
          int descision;
          Random random = new Random();
 
-         descision =  random.nextInt(2);
+         descision =  random.nextInt(1);
 
          switch(descision){
-             case 1:
+             case 0:
                  Attacks.enemyAttack(enemy, player);
                  break;
-             case 2:
+             case 1:
                  Attacks.enemyDefend(enemy, player);
                  break;
 
