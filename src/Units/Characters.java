@@ -1,13 +1,13 @@
 package Units;
 
 public class Characters {
-    private int maxHealth;
-    private int health;
-    private int damage;
-    private int maxMana;
-    private int mana;
-    private int experience;
-    private String name;
+    private int maxHealth = 100;
+    private int health = 100;
+    private int damage = 100;
+    private int maxMana = 100;
+    private int mana = 100;
+    private int experience = 0;
+    private String name = "player";
     private boolean alive = true;
 
     public Characters(int maxHealth, int health, int damage, int maxMana, int mana, int experience, String name, boolean alive) {

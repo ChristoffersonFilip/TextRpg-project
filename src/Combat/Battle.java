@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Battle {
         public static Scanner scanner  = new Scanner(System.in);
 
-        //TODO remove player from in parameter
+        //TODO remove enemy from in parameter
         //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
         //Använder player & enemy getters & setters, går det att lösa på något annat vis?
         public static void combatMenu(Player player, tempEnemy currentEnemy){
@@ -43,19 +43,19 @@ public class Battle {
                         }
                 }
         }
-        //TODO remove player from in parameter
+        //TODO remove enemy from in parameter
         //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
         public static void choice(Player player, tempEnemy enemy){
                 System.out.println("Choose your action");
                 System.out.println("Attack or Defend");
                 String choice = scanner.nextLine();
 
-                switch(choice){
+                switch(choice.toLowerCase()){
 
-                        case "Attack":
+                        case "attack":
                                 Attacks.basicAttack(player, enemy);
                                 break;
-                        case "Defend":
+                        case "defend":
                                 Attacks.defend(player, enemy);
                                 break;
                 }

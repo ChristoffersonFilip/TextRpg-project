@@ -15,7 +15,7 @@ public class Main {
 
 
 
-        Player player = new Player(1, 15, 15, 1, 1, 1, "Player", true);
+        Player player = new Player (100,100,10,100,100,0, "Player", true);
         VariousEnemies.addEnemies();
 
         System.out.println("Enter a name for your character");
@@ -25,7 +25,7 @@ public class Main {
 
          tempEnemy enemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
 
-        //TODO remove player from in parameter
+        //TODO remove enemy from in parameter
         Battle.choice(player, enemy);
 
         /*

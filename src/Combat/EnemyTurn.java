@@ -8,13 +8,15 @@ public class EnemyTurn {
 
     //TODO remove player from parameter
     //Har player & enemy som in-parameter i alla metoder, korrekt eller fel?
+    //Känns inte som att man ska behöva player som in parameter för enemy val?
+    //Enemy väljer aldrig defend
     static void enemyChoice(tempEnemy enemy, Player player){
-         int descision;
+         int decision = 0;
          Random random = new Random();
 
-         descision =  random.nextInt(1);
+         decision =  random.nextInt(1);
 
-         switch(descision){
+         switch(decision){
              case 0:
                  Attacks.enemyAttack(enemy, player);
                  break;
