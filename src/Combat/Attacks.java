@@ -7,6 +7,7 @@ public class Attacks {
 
     //TODO remove player from in parameter
     //Har player & enemy som in-parameter i alla metoder, korrekt eller fel?
+    //Använder player & enemy getters & setters, går det att lösa på något annat vis?
      static void basicAttack(Player player, tempEnemy enemy){
 
         System.out.println(player.getName()+" deals "+player.getDamage()+ " damage");

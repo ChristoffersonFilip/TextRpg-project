@@ -11,6 +11,7 @@ public class Battle {
 
         //TODO remove player from in parameter
         //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
+        //Använder player & enemy getters & setters, går det att lösa på något annat vis?
         public static void combatMenu(Player player, tempEnemy currentEnemy){
                 while(player.isAlive() || currentEnemy.isAlive()) {
                         System.out.println(currentEnemy.getName());

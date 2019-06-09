@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="264">
+              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Combat/Battle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="65" />
+            <state relative-caret-position="648">
+              <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Combat/Attacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="192">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Combat/EnemyTurn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="216">
+              <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/src/Units/Player.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Combat/Battle.java" />
-        <option value="$PROJECT_DIR$/src/Combat/EnemyTurn.java" />
         <option value="$PROJECT_DIR$/src/Combat/Attacks.java" />
+        <option value="$PROJECT_DIR$/src/Combat/EnemyTurn.java" />
       </list>
     </option>
   </component>
@@ -186,16 +186,15 @@
       <workItem from="1559309892094" duration="615000" />
       <workItem from="1559407479729" duration="9134000" />
       <workItem from="1560007519855" duration="9000" />
-      <workItem from="1560102248928" duration="1254000" />
+      <workItem from="1560102248928" duration="1545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20130000" />
+    <option name="totallyTimeSpent" value="20421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -295,10 +294,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Combat/Battle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="65" />
+        <state relative-caret-position="648">
+          <caret line="45" column="81" selection-start-line="45" selection-start-column="81" selection-end-line="45" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -307,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Combat/Attacks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        <state relative-caret-position="192">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -317,18 +323,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Combat/EnemyTurn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="216">
+          <caret line="9" column="76" lean-forward="true" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>
