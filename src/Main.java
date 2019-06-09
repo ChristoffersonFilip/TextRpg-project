@@ -25,7 +25,7 @@ public class Main {
 
          tempEnemy enemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
 
-
+        //TODO remove player from in parameter
         Battle.choice(player, enemy);
 
         /*

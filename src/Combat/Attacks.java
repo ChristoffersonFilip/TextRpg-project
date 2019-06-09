@@ -5,7 +5,8 @@ import Units.tempEnemy;
 
 public class Attacks {
 
-    //TODO add more Attacks and idea
+    //TODO remove player from in parameter
+    //Har player & enemy som in-parameter i alla metoder, korrekt eller fel?
      static void basicAttack(Player player, tempEnemy enemy){
 
         System.out.println(player.getName()+" deals "+player.getDamage()+ " damage");
@@ -20,6 +21,7 @@ public class Attacks {
         }
     }
 
+    //TODO remove player from in parameter
     static void defend(Player player, tempEnemy enemy){
         System.out.println("You defend and take reduced damage");
         System.out.println(player.getHealth());

@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 public class Battle {
         public static Scanner scanner  = new Scanner(System.in);
+
+        //TODO remove player from in parameter
+        //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
         public static void combatMenu(Player player, tempEnemy currentEnemy){
                 while(player.isAlive() || currentEnemy.isAlive()) {
                         System.out.println(currentEnemy.getName());
@@ -39,6 +42,8 @@ public class Battle {
                         }
                 }
         }
+        //TODO remove player from in parameter
+        //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
         public static void choice(Player player, tempEnemy enemy){
                 System.out.println("Choose your action");
                 System.out.println("Attack or Defend");

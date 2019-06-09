@@ -6,6 +6,8 @@ import Units.tempEnemy;
 
 public class EnemyTurn {
 
+    //TODO remove player from parameter
+    //Har player & enemy som in-parameter i alla metoder, korrekt eller fel?
     static void enemyChoice(tempEnemy enemy, Player player){
          int descision;
          Random random = new Random();
