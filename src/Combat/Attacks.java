@@ -8,12 +8,15 @@ public class Attacks {
     //TODO add more Attacks and idea
      static void basicAttack(Player player, tempEnemy enemy){
 
-        System.out.println("Player deals "+player.getDamage()+ " damage");
+        System.out.println(player.getName()+" deals "+player.getDamage()+ " damage");
         System.out.println(enemy.getHealth());
         enemy.setHealth(enemy.getHealth() - player.getDamage());
         System.out.println(enemy.getHealth());
         if(enemy.getHealth() > 0) {
             EnemyTurn.enemyChoice(enemy, player);
+        }
+        else{
+            Battle.combatMenu(player, enemy);
         }
     }
 

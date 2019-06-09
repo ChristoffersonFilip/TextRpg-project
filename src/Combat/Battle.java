@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Battle {
         public static Scanner scanner  = new Scanner(System.in);
-        //TODO Fix combat menu to go to the right place
         public static void combatMenu(Player player, tempEnemy currentEnemy){
                 while(player.isAlive() || currentEnemy.isAlive()) {
                         System.out.println(currentEnemy.getName());
@@ -40,7 +39,6 @@ public class Battle {
                         }
                 }
         }
-        //TODO Fix the in parameters to work with Main.java
         public static void choice(Player player, tempEnemy enemy){
                 System.out.println("Choose your action");
                 System.out.println("Attack or Defend");

@@ -14,15 +14,19 @@ public class Main {
         Random random = new Random();
 
 
+
         Player player = new Player(1, 15, 15, 1, 1, 1, "Player", true);
         VariousEnemies.addEnemies();
 
+        System.out.println("Enter a name for your character");
+        player.setName(scanner.nextLine());
+
         System.out.println(tempEnemy.getEnemyList());
-        //TODO Fix the in parameter and get the enemy to be correct
-        tempEnemy enemy = tempEnemy.getEnemyList(VariousEnemies.chooseEnemy());
+
+         tempEnemy enemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
 
 
-       // Battle.choice(player, enemy);
+        Battle.choice(player, enemy);
 
         /*
         tempEnemy testEnemy = new tempEnemy(1, 15, 10, 1, 1, 1, "enemy", true);
