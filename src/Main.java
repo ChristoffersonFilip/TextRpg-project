@@ -1,5 +1,6 @@
 import Combat.Attacks;
 import Combat.Battle;
+import Menus.MainMenu;
 import Units.Player;
 import Units.VariousEnemies;
 import Units.tempEnemy;
@@ -37,7 +38,7 @@ public class Main {
          tempEnemy enemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
 
         //TODO remove enemy from in parameter
-        Battle.choice(player, enemy);
+        MainMenu.hubMenu(player, enemy);
 
 
     }

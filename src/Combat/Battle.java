@@ -1,5 +1,6 @@
 package Combat;
 
+import Menus.MainMenu;
 import Units.Player;
 import Units.VariousEnemies;
 import Units.tempEnemy;
@@ -34,29 +35,10 @@ public class Battle {
                                 }
 
                                 currentEnemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
-                                choice(player, currentEnemy);
+                                MainMenu.hubMenu(player, currentEnemy);
                         }
                         }
-                /*
-                        else if {
-                                System.out.println("Choose your Action");
-                                System.out.println("Combat or Escape");
 
-                                String choice = scanner.nextLine();
-
-                                switch (choice) {
-                                        case "Combat":
-                                                Battle.choice(player, currentEnemy);
-                                                break;
-                                        case "Escape":
-
-                                                break;
-
-                                }
-                        }
-                }
-
-                 */
         }
         //TODO remove enemy from in parameter
         //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
