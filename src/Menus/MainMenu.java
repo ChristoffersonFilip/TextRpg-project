@@ -34,9 +34,9 @@ public class MainMenu {
     public static void travel(Player player, tempEnemy enemy){
         int randomTravel = 0;
 
-        randomTravel = random.nextInt(25);
+        randomTravel = random.nextInt(20);
 
-        if(randomTravel > 18){
+        if(randomTravel > 8){
             System.out.println("You encounter an enemy!");
             Battle.choice(player, enemy);
         }else
@@ -48,9 +48,15 @@ public class MainMenu {
     public static void rest(Player player, tempEnemy enemy){
         System.out.println("You rest for the rest of the day and recover some health and mana");
         if(player.getHealth() < player.getMaxHealth()){
-            player.setHealth(player.getHealth()+5);
+                player.setHealth(player.getHealth()+5);
+            if(player.getHealth() > player.getMaxHealth()){
+                player.setHealth(player.getMaxHealth());
+            }
         }if(player.getMana() < player.getMaxMana()){
             player.setMana((player.getMana()+5));
+            if(player.getMana() > player.getMaxMana()){
+                player.setMana(player.getMaxMana());
+            }
         }
         hubMenu(player, enemy);
     }
