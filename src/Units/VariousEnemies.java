@@ -6,11 +6,11 @@ public class VariousEnemies {
 
     public static void addEnemies() {
 
-        tempEnemy testEnemy = new tempEnemy(100, 100, 10, 1, 1, 1, "enemy", true);
-        tempEnemy enemy1 = new tempEnemy(100, 100, 10, 1, 1, 1, "titut", true);
-        tempEnemy enemy2 = new tempEnemy(100, 100, 10, 1, 1, 1, "HejHej", true);
-        tempEnemy enemy3 = new tempEnemy(100, 100, 10, 1, 1, 1, "TjoTjo", true);
-        tempEnemy enemy4 = new tempEnemy(100, 100, 10, 1, 1, 1, "Hejsan", true);
+        tempEnemy testEnemy = new tempEnemy(100, 1, 10, 1, 1, 500, "enemy", true, 1);
+        tempEnemy enemy1 = new tempEnemy(100, 1, 10, 1, 1, 500, "titut", true, 1);
+        tempEnemy enemy2 = new tempEnemy(100, 1, 10, 1, 1, 500, "HejHej", true, 1);
+        tempEnemy enemy3 = new tempEnemy(100, 1, 10, 1, 1, 500, "TjoTjo", true, 1);
+        tempEnemy enemy4 = new tempEnemy(100, 1, 10, 1, 1, 500, "Hejsan", true, 1);
 
         tempEnemy.getEnemyList().add(enemy1);
         tempEnemy.getEnemyList().add(enemy2);

@@ -9,8 +9,9 @@ public class Characters {
     private int experience = 0;
     private String name = "player";
     private boolean alive = true;
+    private int level = 1;
 
-    public Characters(int maxHealth, int health, int damage, int maxMana, int mana, int experience, String name, boolean alive) {
+    public Characters(int maxHealth, int health, int damage, int maxMana, int mana, int experience, String name, boolean alive, int level) {
         this.maxHealth = maxHealth;
         this.health = health;
         this.damage = damage;
@@ -19,6 +20,15 @@ public class Characters {
         this.experience = experience;
         this.name = name;
         this.alive = alive;
+        this.level = level;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public int getDamage() {

@@ -19,13 +19,26 @@ public class Battle {
                                 System.out.println("You died");
                                 player.setAlive(false);
                                 System.exit(1);
-                        }else if (currentEnemy.getHealth() <= 0){
+                        }else if (currentEnemy.getHealth() <= 0) {
+                                player.setExperience(currentEnemy.getExperience());
                                 System.out.println("You won the battle");
+                                System.out.println("You gained " + currentEnemy.getExperience() + " experience");
+                                //TODO fix broken experience system, figure out a good algorythm to increase experience necessary to level up.
+                                if (player.getExperience() >= player.getMaxExperience()) {
+                                        player.setMaxExperience(player.getMaxExperience()*4);
+                                        System.out.println("Congratulations, you leveled up");
+                                        player.setLevel(player.getLevel() + 1);
+                                        player.setDamage(player.getDamage() + 5);
+                                        player.setExperience(0);
+                                        System.out.println("You are now level " + player.getLevel());
+                                }
+
                                 currentEnemy = tempEnemy.getEnemyList().get(VariousEnemies.chooseEnemy());
                                 choice(player, currentEnemy);
                         }
-
-                        else {
+                        }
+                /*
+                        else if {
                                 System.out.println("Choose your Action");
                                 System.out.println("Combat or Escape");
 
@@ -42,6 +55,8 @@ public class Battle {
                                 }
                         }
                 }
+
+                 */
         }
         //TODO remove enemy from in parameter
         //Är det rätt eller kan jag lösa det utan att ha player som in parameter?
